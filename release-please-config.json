@@ -1,0 +1,29 @@
+{
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "packages": {
+    "packages/core": {
+      "package-name": "@piffle/core"
+    },
+    "packages/cli": {
+      "package-name": "@piffle/cli"
+    },
+    "packages/llm-claude": {
+      "package-name": "@piffle/llm-claude"
+    },
+    "packages/llm-ollama": {
+      "package-name": "@piffle/llm-ollama"
+    },
+    "packages/llm-openrouter": {
+      "package-name": "@piffle/llm-openrouter"
+    },
+    "packages/provider-kokoro": {
+      "package-name": "@piffle/provider-kokoro"
+    },
+    "packages/provider-voicebox": {
+      "package-name": "@piffle/provider-voicebox"
+    }
+  },
+  "release-type": "node",
+  "bump-minor-pre-major": true,
+  "bump-patch-for-minor-pre-major": true
+}

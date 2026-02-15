@@ -1,0 +1,3 @@
+packages:
+  - "packages/*"
+useNodeVersion: 22.18.0

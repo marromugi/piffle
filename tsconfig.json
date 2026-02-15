@@ -1,0 +1,12 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./packages/core" },
+    { "path": "./packages/cli" },
+    { "path": "./packages/provider-kokoro" },
+    { "path": "./packages/provider-voicebox" },
+    { "path": "./packages/llm-claude" },
+    { "path": "./packages/llm-ollama" },
+    { "path": "./packages/llm-openrouter" }
+  ]
+}

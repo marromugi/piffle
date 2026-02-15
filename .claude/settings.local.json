@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm typecheck:*)",
+      "Bash(pnpm dev --help:*)",
+      "Bash(tree:*)",
+      "Bash(pnpm build:*)",
+      "Bash(pnpm --filter @piffle/cli dev:*)",
+      "Bash(npm view:*)",
+      "Bash(pnpm install:*)"
+    ],
+    "deny": [
+      "Bash(npm:*)",
+      "Bash(yarn:*)",
+      "Bash(bun:*)",
+      "Bash(rm -rf:*)",
+      "Bash(sudo :*)"
+    ]
+  }
+}

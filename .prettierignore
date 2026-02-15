@@ -1,0 +1,15 @@
+# ビルド成果物
+dist/
+**/dist/
+
+# 依存関係
+node_modules/
+**/node_modules/
+
+# 生成ファイル
+*.d.ts
+pnpm-lock.yaml
+
+# その他
+.changeset/
+coverage/

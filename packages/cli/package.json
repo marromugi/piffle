@@ -1,0 +1,46 @@
+{
+  "name": "@piffle/cli",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "piffle": "./dist/index.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && chmod +x dist/index.js",
+    "dev": "tsx --env-file=.env src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix"
+  },
+  "dependencies": {
+    "@piffle/core": "workspace:*",
+    "@piffle/provider-kokoro": "workspace:*",
+    "@piffle/provider-voicebox": "workspace:*",
+    "@piffle/llm-ollama": "workspace:*",
+    "@piffle/llm-openrouter": "workspace:*",
+    "@piffle/llm-claude": "workspace:*",
+    "@piffle/llm-claude-code": "workspace:*",
+    "chalk": "^5.6.2",
+    "commander": "^14.0.3",
+    "ora": "^9.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.2.3",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

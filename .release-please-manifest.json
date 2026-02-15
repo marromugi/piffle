@@ -1,0 +1,9 @@
+{
+  "packages/core": "0.0.0",
+  "packages/cli": "0.0.0",
+  "packages/llm-claude": "0.0.0",
+  "packages/llm-ollama": "0.0.0",
+  "packages/llm-openrouter": "0.0.0",
+  "packages/provider-kokoro": "0.0.0",
+  "packages/provider-voicebox": "0.0.0"
+}
