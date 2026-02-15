@@ -16,7 +16,7 @@ import { createClaudeProvider } from "@piffle/llm-claude";
 import { createClaudeCodeProvider } from "@piffle/llm-claude-code";
 
 import { Command } from "commander";
-import { speakCommand } from "./commands/speak.js";
+import { speakCommand, type SpeakOptions } from "./commands/speak.js";
 import { voicesCommand } from "./commands/voices.js";
 import { providersCommand } from "./commands/providers.js";
 import {
@@ -88,7 +88,9 @@ async function main() {
       "-f, --fallback <message>",
       "Fallback message if LLM is unavailable"
     )
-    .action((text, options) => speakCommand(text, options, config));
+    .action((text: string | undefined, options: SpeakOptions) =>
+      speakCommand(text, options, config)
+    );
 
   // Voices subcommand
   program

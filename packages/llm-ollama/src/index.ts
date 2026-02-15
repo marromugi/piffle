@@ -36,7 +36,7 @@ export class OllamaProvider implements LLMProvider {
         };
       }
       return { available: true };
-    } catch (error) {
+    } catch {
       return {
         available: false,
         reason: `Cannot connect to Ollama server at ${this.baseUrl}`,
