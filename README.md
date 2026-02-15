@@ -197,6 +197,19 @@ pnpm --filter @piffle/cli dev "Hello"
 - macOS (uses `afplay` for audio playback)
 - Ollama (for local LLM) or API keys for Claude/OpenRouter
 
+## Related Services
+
+### TTS Providers
+
+- [Kokoro](https://github.com/hexgrad/kokoro) - High-quality TTS engine
+- [VOICEVOX](https://voicevox.hiroshiba.jp/) - Japanese text-to-speech engine
+
+### LLM Providers
+
+- [Ollama](https://ollama.ai/) - Run LLMs locally
+- [Claude](https://www.anthropic.com/claude) - Anthropic's AI assistant
+- [OpenRouter](https://openrouter.ai/) - Unified API for multiple LLMs
+
 ## License
 
 MIT
