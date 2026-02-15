@@ -25,7 +25,9 @@ export default tseslint.config(
         ...globals.node,
       },
       parserOptions: {
-        projectService: true,
+        projectService: {
+          allowDefaultProject: ["packages/*/src/*.test.ts"],
+        },
         tsconfigRootDir: import.meta.dirname,
       },
     },
@@ -44,6 +46,14 @@ export default tseslint.config(
       "@typescript-eslint/prefer-nullish-coalescing": "off",
       "@typescript-eslint/no-unsafe-assignment": "warn",
       "@typescript-eslint/restrict-plus-operands": "warn",
+    },
+  },
+
+  // テストファイル用の設定
+  {
+    files: ["**/*.test.ts"],
+    rules: {
+      "@typescript-eslint/no-base-to-string": "off",
     },
   },
 
