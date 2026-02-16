@@ -1,4 +1,8 @@
-import type { LLMProvider, SummarizeOptions, AvailabilityResult } from "@piffle/core";
+import type {
+  LLMProvider,
+  SummarizeOptions,
+  AvailabilityResult,
+} from "@piffle/core";
 import { buildPrompt, DEFAULT_SUMMARIZE_PROMPT } from "@piffle/core";
 
 const DEFAULT_MODEL = "openai/gpt-oss-120b:free";
@@ -73,7 +77,9 @@ export class OpenRouterProvider implements LLMProvider {
 
     if (!response.ok) {
       const errorBody = await response.text();
-      throw new Error(`OpenRouter API error: ${response.status} - ${errorBody}`);
+      throw new Error(
+        `OpenRouter API error: ${response.status} - ${errorBody}`
+      );
     }
 
     const data = (await response.json()) as ChatCompletionResponse;

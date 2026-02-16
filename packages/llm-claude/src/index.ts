@@ -1,4 +1,8 @@
-import type { LLMProvider, SummarizeOptions, AvailabilityResult } from "@piffle/core";
+import type {
+  LLMProvider,
+  SummarizeOptions,
+  AvailabilityResult,
+} from "@piffle/core";
 import { buildPrompt, DEFAULT_SUMMARIZE_PROMPT } from "@piffle/core";
 
 const DEFAULT_MODEL = "claude-haiku-4-20250514";
