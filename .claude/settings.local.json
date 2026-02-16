@@ -8,7 +8,9 @@
       "Bash(pnpm --filter @piffle/cli dev:*)",
       "Bash(npm view:*)",
       "Bash(pnpm install:*)",
-      "Bash(pnpm run lint:*)"
+      "Bash(pnpm run lint:*)",
+      "Bash(pnpm run build:*)",
+      "Bash(pnpm --filter piffle test:*)"
     ],
     "deny": [
       "Bash(npm:*)",

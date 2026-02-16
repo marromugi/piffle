@@ -37,7 +37,7 @@ jobs:
       - run: pnpm run build
         if: ${{ steps.release.outputs.releases_created }}
 
-      - run: pnpm -r publish --access public
+      - run: pnpm --filter piffle publish --access public
         if: ${{ steps.release.outputs.releases_created }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

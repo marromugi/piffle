@@ -2,7 +2,18 @@
   "$schema": "https://unpkg.com/@changesets/config@3.0.0/schema.json",
   "changelog": "@changesets/cli/changelog",
   "commit": false,
-  "fixed": [],
+  "fixed": [
+    [
+      "piffle",
+      "@piffle/core",
+      "@piffle/llm-claude",
+      "@piffle/llm-claude-code",
+      "@piffle/llm-ollama",
+      "@piffle/llm-openrouter",
+      "@piffle/provider-kokoro",
+      "@piffle/provider-voicebox"
+    ]
+  ],
   "linked": [],
   "access": "public",
   "baseBranch": "main",
