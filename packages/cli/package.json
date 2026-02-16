@@ -17,7 +17,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc && chmod +x dist/index.js",
+    "build": "tsup",
     "dev": "tsx --env-file=.env src/index.ts",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src/",
@@ -37,6 +37,7 @@
   },
   "devDependencies": {
     "@types/node": "^25.2.3",
+    "tsup": "^8.0.0",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   },

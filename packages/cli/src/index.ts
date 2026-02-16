@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 // Import TTS providers (side effect: registers providers)
 import "@piffle/provider-kokoro";
 import "@piffle/provider-voicebox";
