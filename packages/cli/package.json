@@ -1,6 +1,6 @@
 {
   "name": "piffle",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Text-to-speech CLI tool with LLM summarization",
   "type": "module",
   "main": "./dist/index.js",
